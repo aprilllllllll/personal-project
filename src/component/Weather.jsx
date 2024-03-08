@@ -6,9 +6,9 @@ export default function Weather({ latitude, longitude }) {
     fetch(
       `https://www.7timer.info/bin/astro.php?lon=113.2&lat=23.1&ac=0&unit=metric&output=json`
     )
-      .then(response => response.json())
-      .then(data => setWeather(data))
-      .catch(error => console.error("Error fetching data:", error));
+      .then((response) => response.json())
+      .then((data) => setWeather(data))
+      .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   return (
@@ -16,6 +16,7 @@ export default function Weather({ latitude, longitude }) {
       <p>{latitude}</p>
       <p>{longitude}</p>
       <p>{import.meta.env.VITE_WEATHER_APIKEY}</p>
+      <p>new user</p>
     </>
   );
 }
