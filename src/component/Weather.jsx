@@ -17,7 +17,7 @@ export default function Weather({ latitude, longitude }) {
       <p>{longitude}</p>
       <p>{import.meta.env.VITE_WEATHER_APIKEY}</p>
       <p>new user</p>
-      <p>hello friend</p>
+
     </>
   );
 }
